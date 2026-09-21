@@ -127,8 +127,8 @@ gtag('config', 'G-CK5D03BH1R');
 
   .contact-brand-lockup {
     display: inline-flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
     margin: 0 0 1.25rem;
   }
 
@@ -141,11 +141,38 @@ gtag('config', 'G-CK5D03BH1R');
 
   .contact-brand-name {
     color: #fff;
-    margin: 0;
+    margin-top: 0.4rem;
     font-size: clamp(1.35rem, 2.5vw, 1.8rem);
     font-weight: 700;
     line-height: 1.1;
   }
+
+  .veteran-mark {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-top: 1.35rem;
+  }
+  .veteran-mark img {
+    width: 92px;
+    height: auto;
+    flex: 0 0 auto;
+    display: block;
+  }
+  .veteran-mark p {
+    margin: 0;
+    color: #fff;
+    font-family: "Georgia Pro", Georgia, "Times New Roman", serif;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 700;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    line-height: 1.25;
+  }
+  @media (max-width: 560px) {
+    .veteran-mark img { width: 78px; }
+  }
+
 </style>
 
 </head>
@@ -328,6 +355,10 @@ gtag('config', 'G-CK5D03BH1R');
           <p class="eyebrow light">Start a conversation</p>
           <h2>Need help understanding a site, landscape, or soil dataset?</h2>
           <p>Send a short description of the project, the location, and the type of support you need.</p>
+          <div class="veteran-mark" aria-label="Navy Veteran Owned and Operated">
+            <img src="assets/navy-sar-emblem.png" alt="U.S. Navy search and rescue emblem">
+            <p>Navy Veteran Owned &amp; Operated</p>
+          </div>
         </div>
         <div class="contact-card">
           <p class="contact-name">Ryan Hodges, Ph.D.</p>
